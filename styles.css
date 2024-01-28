@@ -10,7 +10,47 @@ header {
     box-sizing: inherit;
     width: 100%;
 
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
     display: flex;
+    text-align: center;
+}
+
+.header-button {
+    font-family: Nunito;
+    font-size: medium;
+    color: #F0F0F0;
+
+    background-color: rgb(255, 255, 255, 0.25);
+
+    border: none;
+
+    aspect-ratio: 1 / 1;
+
+    padding: 0.5%;
+    width: 58.35px;
+
+    line-height: 350%;
+
+    margin-right: 0.5%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 15px;
+
+    transition: all 0.25s ease-out;
+
+    flex-shrink: 0;
+}
+
+.header-button:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.header-button:active {
+    background-color: rgb(255, 255, 255, 0.1);
 }
 
 body {
@@ -40,10 +80,11 @@ p {
 }
 
 .centered {
-    padding: 0;
     margin: auto;
-    width: max-content;
-    display: flex;
+    display: block;
+
+    width: 100%;
+    height: fit-content;
 }
 
 .info-box {
