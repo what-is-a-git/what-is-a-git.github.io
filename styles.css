@@ -18,6 +18,7 @@ header {
 }
 
 .header-button {
+    text-decoration: none;
     font-family: Nunito;
     font-size: medium;
     color: #F0F0F0;
@@ -79,12 +80,55 @@ p {
     margin-top: 2%;
 }
 
+.stuff {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.stuff-container {
+    display: grid;
+    grid-template-columns: repeat(4, 128px);
+
+    justify-content: center;
+    vertical-align: middle;
+
+    background-color: rgb(0, 0, 0, 0.5);
+    padding-top: 1%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.no-deco-link {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.website-title {
+    margin: auto;
+    margin-top: 1.25%;
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+
+    position: absolute;
+    justify-content: center;
+}
+
 .centered {
     margin: auto;
     display: block;
 
     width: 100%;
     height: fit-content;
+}
+
+.info-centerer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .info-box {
@@ -96,8 +140,6 @@ p {
 
     width: 25%;
     height: 50%;
-
-    clear: left;
 
     display: table;
     box-sizing: content-box;
@@ -127,4 +169,14 @@ p {
 .image-showcase:hover {
     opacity: 100%;
     filter: blur(0px);
+}
+
+.corner-image {
+    position: fixed;
+
+    bottom: 0;
+    right: 0;
+
+    width: 2.5%;
+    height: auto;
 }
